@@ -1,0 +1,15 @@
+<form (ngSubmit)="submitMethod()" [formGroup]="testForm">
+	<label>email</label>
+	<input 
+      type="email"
+      class="form-control"
+      name="email"
+      required
+      formControlName="email"
+      [(ngModel)]="email"
+  	>
+	<button type="submit">Submit</button>
+</form>
+    <li *ngFor="let dat of data">
+      {{ dat.email }}
+    </li>

@@ -1,0 +1,14 @@
+<div class="row">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+	<ul class="list-group">
+	  <li class="list-group-item" *ngFor="let contact of contacts" appContacts>
+	  {{contact.firstName | testpipe}}
+	  {{contact.lastName | uppercase}}
+	  {{contact.cellPhone}}
+	  </li>
+	</ul>
+	<a [routerLink]="['/contacts','Test']">Test subscription</a>
+</div>
+<div class="col-sm-3"></div>
+</div>

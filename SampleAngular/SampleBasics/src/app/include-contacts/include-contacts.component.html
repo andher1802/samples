@@ -1,0 +1,29 @@
+<div class="row">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+  <div class="form-group">
+    <label>First Name:</label>
+    <input type="text" name="firstName"  class="form-control" [(ngModel)] = "firstName" >
+  </div>
+  <div class="form-group">
+    <label for="pwd">Last Name:</label>
+    <input type="text" class="form-control" [(ngModel)]="lastName">
+  </div>
+  <div class="form-group">
+    <label for="email">Cellphone:</label>
+    <input type="text" class="form-control" [(ngModel)]="cellPhone">
+  </div>
+  <button class="btn btn-default" type="submit" (click)="AddContact($event)">Add Contact</button>
+  <hr>
+</div>
+<div class="col-sm-3"></div>
+</div>
+
+<div class="row">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+  <button class="btn btn-success" type="button" (click)="logIn($event)">Log In</button>
+  <button class="btn btn-danger" type="button" (click)="logOut($event)">Log Out</button>
+</div>
+<div class="col-sm-3"></div>
+</div>
